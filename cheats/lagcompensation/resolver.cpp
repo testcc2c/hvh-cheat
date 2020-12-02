@@ -105,7 +105,7 @@ void resolver::resolve_yaw()
 	if (animstate->m_velocity > 0.1f || fabs(animstate->flUpVelocity) > 100.f)
 		valid_lby = animstate->m_flTimeSinceStartedMoving < 0.22f;
 
-	if (fabs(delta) > 30.0f && valid_lby) // totally not stolen from legendware
+	if (fabs(delta) > 30.0f && valid_lby)
 	{
 		if (g_ctx.globals.missed_shots[player->EntIndex()])
 			delta = -delta;
